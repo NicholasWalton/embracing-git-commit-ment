@@ -3,7 +3,7 @@
 import unittest
 
 
-class TestFibonnacciSequence(unittest.TestCase):
+class TestFibonacciSequence(unittest.TestCase):
     def setUp(self):
         with open("fibb.txt") as f:
             self.values = [int(line) for line in f.readlines()]
