@@ -16,7 +16,7 @@ class TestFibonacciSequence(unittest.TestCase):
 
     def test_values(self):
         triples = list(zip(self.values[:-2], self.values[1:-1], self.values[2:]))
-        self.assertEqual(len(triples), len(self.values) - 1)
+        self.assertEqual(len(triples), len(self.values) - 2)
         for first, second, third in triples:
             self.assertEqual(first + second, third)
 
