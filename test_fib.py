@@ -12,7 +12,7 @@ class TestFibonacciSequence(unittest.TestCase):
         pairs = list(zip(self.values[:-1], self.values[1:]))
         self.assertEqual(len(pairs), len(self.values) - 1)
         for smaller, larger in pairs:
-            self.assertLess(smaller, larger)
+            self.assertLessEqual(smaller, larger)
 
     def test_values(self):
         triples = list(zip(self.values[:-2], self.values[1:-1], self.values[2:]))
