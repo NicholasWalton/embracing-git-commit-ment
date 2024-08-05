@@ -8,8 +8,8 @@ In this workshop, we'll practice techniques for cleaning history between `commit
 - [Before you start](#before-you-start)
   - [Prerequisites](#prerequisites)
   - [Preparation](#preparation)
-- [Workshop](#workshop)
   - [Using the aliases](#using-the-aliases)
+- [Workshop](#workshop)
   - [Scenario](#scenario)
   - [Step-by-step](#step-by-step)
 - [Solutions](#solutions)
@@ -38,8 +38,6 @@ If you don't use command-line Git on a regular basis, you may want to do the fir
 
 You may find this workshop unnecessary if you regularly use the features documented in [Git - Rewriting History (git-scm.com)](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) and are comfortable with [git rebase: what can go wrong? (jvns.ca)](https://jvns.ca/blog/2023/11/06/rebasing-what-can-go-wrong-/).
 
-## Workshop
-
 ### Using the aliases
 
 For convenience, helpful git aliases including `git lol` and `git lola` are provided in `project.gitconfig`. Do:
@@ -50,11 +48,12 @@ git config --local include.path ../project.gitconfig
 
 to add them to your local repo.
 
+## Workshop
+
 ### Scenario
 
 You've been tasked with creating a file containing the first few values of the Fibonacci sequence and appropriate tests.
 Late yesterday, you got to "mostly done" (perhaps). Today, you need to fix any remaining bugs and clean up your commit history before opening a PR.
-
 
 ### Step-by-step
 
@@ -101,10 +100,12 @@ The `final` branch contains all needed commits. The `solution` branch is fully r
 
 ## Follow-up
 
-Now that you know what's possible, try some convenience tooling such as:
+- Try splitting a commit into two or more commits (see [Git - Rewriting History (git-scm.com)](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) for details)
 
-- [`git undo` with git-branchless](https://github.com/arxanas/git-branchless?tab=readme-ov-file#about)
-- [inline `amend` with lazygit](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#amend-an-old-commit)
+- Try some convenience tooling such as:
+
+  - [`git undo` with git-branchless](https://github.com/arxanas/git-branchless?tab=readme-ov-file#about)
+  - [inline `amend` with lazygit](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#amend-an-old-commit)
 
 ## Acknowledgments
 
