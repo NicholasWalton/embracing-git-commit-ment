@@ -128,6 +128,7 @@ Ask for help!
 If you run into any trouble, please share your screen so we can learn together.
 
 ---
+layout: false
 ## Amend a copy-paste error
 
 Change
@@ -205,15 +206,16 @@ Verify that each of the corrected commits passes all the tests by doing:
 
 
 ```bash
-git rebase -i origin/base --exec './test_fib.py'`
+git rebase -i origin/base --exec './test_fib.py'
 ```
 
 ---
-style:inverse
-## More Q&A
+class: middle, center
+# More Q&A
 
 ---
-## Other Git challenges?
+class: inverse, middle, center
+# Other Git challenges?
 
 ---
 ## Follow-up
@@ -225,15 +227,15 @@ style:inverse
   - [inline `amend` with lazygit](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#amend-an-old-commit)
 
 ---
-
-## Acknowledgments
+class: middle
+### Thanks!
 
 Inspiration: swan and Anna
 
 Tool Talk Time: Wolf, Ryan, and Clint
 
-Thank you!
-
 ???
-swan and Anna inspired this workshop.
-Tool Talkers helped me get the ideas in order
+I'd like to thank swan and Anna for inspiring this workshop.
+And the Tool Talkers helped me get the ideas in order.
+
+Thank you!
