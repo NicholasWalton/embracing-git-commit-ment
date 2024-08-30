@@ -82,13 +82,13 @@ Late yesterday, you got to "mostly done" (perhaps). Today, you need to fix any r
 4. Run the tests by `./test_fib.py` and fix the mistakes you find. 
    (Change `self.assertLess()` to `self.assertLessEqual()` and correct the final line in `fib.txt`.)
 
-5. Use `git add --patch` to stage the change to `fib.txt`.
+5. Use `git add --patch` to stage the change to `test_fib.py`.
 
-6. Use `git annotate HEAD -- fib.txt` to determine which commit to fix, then do `git commit --fixup <commit hash>`.
+6. Use `git annotate HEAD -- test_fib.py` to determine which commit to fix, then do `git commit --squash <commit hash>` and include an updated commit message below the `squash! ...` line.
 
-7. Use `git add -p` (short for `--patch`) to stage the change to `test_fib.py`.
+7. Use `git add -p` (short for `--patch`) to stage the change to `fib.txt`.
 
-8. Use `git annotate HEAD -- test_fib.py` to determine which commit to fix, then do `git commit --squash <commit hash>` and include an updated commit message below the `squash! ...` line.
+8. Use `git annotate HEAD -- fib.txt` to determine which commit to fix, then do `git commit --fixup <commit hash>`.
 
 9. Apply your fixes by rebasing again.
 

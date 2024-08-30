@@ -158,6 +158,17 @@ Suggested fixes:
 - Correct the final line in `fib.txt`
 
 ---
+## Commit `test_fib.py` fix
+
+`git add --patch` to stage the change to `test_fib.py`
+
+`git annotate HEAD -- test_fib.py` to determine which commit to fix
+
+`git commit --squash <commit hash>`
+
+(write an updated commit message below the `squash! ...` line)
+
+---
 ## Commit `fib.txt` fix
 
 `git add --patch` to stage the change to `fib.txt`
@@ -165,17 +176,6 @@ Suggested fixes:
 `git annotate HEAD -- fib.txt` to determine which commit to fix
 
 `git commit --fixup <commit hash>`
-
----
-## Commit `test_fib.py` fix
-
-`git add --patch` to stage the change
-
-`git annotate HEAD -- test_fib.py` to determine which commit to fix
-
-`git commit --squash <commit hash>`
-
-(write an updated commit message below the `squash! ...` line)
 
 ---
 ## Rewrite History!
