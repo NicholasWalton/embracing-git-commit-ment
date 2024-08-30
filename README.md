@@ -57,7 +57,7 @@ Late yesterday, you got to "mostly done" (perhaps). Today, you need to fix any r
 
 ### Step-by-step
 
-1. Create your branch from yesterday: `git checkout -b my-branch`
+1. Create your branch from yesterday: `git switch -c my-branch origin/main`
 2. Inspect your work, then do a rebase to incorporate the fixes you've made:
     ```bash
     git lol --patch origin/base..HEAD
@@ -75,16 +75,18 @@ Late yesterday, you got to "mostly done" (perhaps). Today, you need to fix any r
     self.assertEqual(len(triples), len(self.values) - 2)
     ```
 
+    and `git add`.
+
     Since this only affects your most recent commit (check `git lol -1 --patch`), just `git commit --amend` this change.
 
 4. Run the tests by `./test_fib.py` and fix the mistakes you find. 
    (Change `self.assertLess()` to `self.assertLessEqual()` and correct the final line in `fib.txt`.)
 
-5. Use `git add -p` to stage the change to `fib.txt`.
+5. Use `git add --patch` to stage the change to `fib.txt`.
 
 6. Use `git annotate HEAD -- fib.txt` to determine which commit to fix, then do `git commit --fixup <commit hash>`.
 
-7. Use `git add -p` to stage the change to `test_fib.py`.
+7. Use `git add -p` (short for `--patch`) to stage the change to `test_fib.py`.
 
 8. Use `git annotate HEAD -- test_fib.py` to determine which commit to fix, then do `git commit --squash <commit hash>` and include an updated commit message below the `squash! ...` line.
 

@@ -89,7 +89,7 @@ class: center, inverse
 I'm going to walk through the first steps now to explain what they look like and what they mean.
 
 ```
-git checkout -b my-branch
+git switch -c my-branch origin/main
 git lol --patch origin/base..HEAD
 git config --local include.path ../project.gitconfig
 git rebase --interactive --autosquash origin/base
@@ -142,6 +142,8 @@ to
 ```python
 self.assertEqual(len(triples), len(self.values) - 2)
 ```
+
+and `git add`.
 
 Since this only affects your most recent commit (check `git lol -1 --patch`), just `git commit --amend` this change.
 
