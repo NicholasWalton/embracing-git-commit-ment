@@ -122,6 +122,8 @@ class: center
 
 Follow the step-by-step in the README
 
+As you complete steps, click the number emojis in the chat (1️⃣,2️⃣,...,🔟,🐙)
+
 Ask for help!
 
 ???
